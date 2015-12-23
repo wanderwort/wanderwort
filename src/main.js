@@ -10,23 +10,28 @@ var {
 var Dimensions = require('Dimensions');
 var windowSize = Dimensions.get('window');
 
-var Word = require('./word')
+var WordContainer = require('./word-container')
 
-var wordsData = [{text: 'Hallo Tim!'}, {text: 'Porree'}, {text: 'Kanapee'}]
+var words = [{text: 'schmausen', fontFamily: 'Avenir'}, {text: 'Porree', backgroundColor: 'red', color: '#F3F205'}, {text: 'Kanapee'}]
+
+
 
 var main = React.createClass({
+  getInitialState: function() {
+    return {
+      scrollEnabled: true
+    }
+  },
   render: function() {
     return (
-      <ScrollView pagingEnabled={true} style={styles.main} contentContainerStyle={styles.container}>
-        {this.words()}
+      <ScrollView scrollEnabled={this.state.scrollEnabled} showsVerticalScrollIndicator={false} pagingEnabled={true} style={styles.main} contentContainerStyle={styles.container}>
+        {this.wordContainers()}
       </ScrollView>
     );
   },
-  words: function() {
-    return wordsData.map((wordData, index) =>
-      <View key={index} style={styles.wordContainer}>
-        <Word wordData={wordData} />
-      </View>
+  wordContainers: function() {
+    return words.map((word, index) =>
+      <WordContainer key={index} data={ { word: word } }  parentScrollView={this} />
     )
   },
   subviewStyle: function() {
