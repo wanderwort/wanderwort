@@ -25,11 +25,6 @@
 		759FDF591C2AC670006BB74A /* PTSerif-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 759FDF551C2AC670006BB74A /* PTSerif-Italic.ttf */; };
 		759FDF5A1C2AC670006BB74A /* PTSerif-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 759FDF561C2AC670006BB74A /* PTSerif-Regular.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		994670801C2B529F00C9DCAA /* AbrilFatface-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9946707F1C2B529F00C9DCAA /* AbrilFatface-Regular.ttf */; };
-		9946708D1C2B52B200C9DCAA /* PT_Sans-Narrow-Web-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9946708B1C2B52B200C9DCAA /* PT_Sans-Narrow-Web-Bold.ttf */; };
-		9946708E1C2B52B200C9DCAA /* PT_Sans-Narrow-Web-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9946708C1C2B52B200C9DCAA /* PT_Sans-Narrow-Web-Regular.ttf */; };
-		994670911C2B52C400C9DCAA /* OldStandard-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9946708F1C2B52C400C9DCAA /* OldStandard-Bold.ttf */; };
-		994670921C2B52C400C9DCAA /* OldStandard-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 994670901C2B52C400C9DCAA /* OldStandard-Regular.ttf */; };
 		994670951C2B52D700C9DCAA /* Vollkorn-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 994670931C2B52D700C9DCAA /* Vollkorn-Bold.ttf */; };
 		994670961C2B52D700C9DCAA /* Vollkorn-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 994670941C2B52D700C9DCAA /* Vollkorn-Regular.ttf */; };
 		9990BFB61C2AE7EE00B664BF /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9990BFB51C2AE7EE00B664BF /* ionicons.ttf */; };
@@ -140,11 +135,6 @@
 		759FDF561C2AC670006BB74A /* PTSerif-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PTSerif-Regular.ttf"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		9946707F1C2B529F00C9DCAA /* AbrilFatface-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AbrilFatface-Regular.ttf"; path = "../../../Desktop/Abril_Fatface/AbrilFatface-Regular.ttf"; sourceTree = "<group>"; };
-		9946708B1C2B52B200C9DCAA /* PT_Sans-Narrow-Web-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PT_Sans-Narrow-Web-Bold.ttf"; path = "../../../Desktop/PT_Sans_Narrow/PT_Sans-Narrow-Web-Bold.ttf"; sourceTree = "<group>"; };
-		9946708C1C2B52B200C9DCAA /* PT_Sans-Narrow-Web-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PT_Sans-Narrow-Web-Regular.ttf"; path = "../../../Desktop/PT_Sans_Narrow/PT_Sans-Narrow-Web-Regular.ttf"; sourceTree = "<group>"; };
-		9946708F1C2B52C400C9DCAA /* OldStandard-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OldStandard-Bold.ttf"; path = "../../../Desktop/Old_Standard_TT/OldStandard-Bold.ttf"; sourceTree = "<group>"; };
-		994670901C2B52C400C9DCAA /* OldStandard-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OldStandard-Regular.ttf"; path = "../../../Desktop/Old_Standard_TT/OldStandard-Regular.ttf"; sourceTree = "<group>"; };
 		994670931C2B52D700C9DCAA /* Vollkorn-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Vollkorn-Bold.ttf"; path = "../../../Desktop/Vollkorn/Vollkorn-Bold.ttf"; sourceTree = "<group>"; };
 		994670941C2B52D700C9DCAA /* Vollkorn-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Vollkorn-Regular.ttf"; path = "../../../Desktop/Vollkorn/Vollkorn-Regular.ttf"; sourceTree = "<group>"; };
 		9990BFB51C2AE7EE00B664BF /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ionicons.ttf; sourceTree = "<group>"; };
@@ -284,15 +274,10 @@
 		759FDF521C2AC5F3006BB74A /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				9946707F1C2B529F00C9DCAA /* AbrilFatface-Regular.ttf */,
-				9946708B1C2B52B200C9DCAA /* PT_Sans-Narrow-Web-Bold.ttf */,
-				9946708C1C2B52B200C9DCAA /* PT_Sans-Narrow-Web-Regular.ttf */,
 				9990BFB51C2AE7EE00B664BF /* ionicons.ttf */,
 				759FDF531C2AC670006BB74A /* PTSerif-Bold.ttf */,
 				994670931C2B52D700C9DCAA /* Vollkorn-Bold.ttf */,
 				994670941C2B52D700C9DCAA /* Vollkorn-Regular.ttf */,
-				9946708F1C2B52C400C9DCAA /* OldStandard-Bold.ttf */,
-				994670901C2B52C400C9DCAA /* OldStandard-Regular.ttf */,
 				759FDF541C2AC670006BB74A /* PTSerif-BoldItalic.ttf */,
 				759FDF551C2AC670006BB74A /* PTSerif-Italic.ttf */,
 				759FDF561C2AC670006BB74A /* PTSerif-Regular.ttf */,
@@ -557,17 +542,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				994670921C2B52C400C9DCAA /* OldStandard-Regular.ttf in Resources */,
-				994670801C2B529F00C9DCAA /* AbrilFatface-Regular.ttf in Resources */,
 				994670951C2B52D700C9DCAA /* Vollkorn-Bold.ttf in Resources */,
 				759FDF591C2AC670006BB74A /* PTSerif-Italic.ttf in Resources */,
-				994670911C2B52C400C9DCAA /* OldStandard-Bold.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				9946708E1C2B52B200C9DCAA /* PT_Sans-Narrow-Web-Regular.ttf in Resources */,
 				759FDF581C2AC670006BB74A /* PTSerif-BoldItalic.ttf in Resources */,
 				9990BFB61C2AE7EE00B664BF /* ionicons.ttf in Resources */,
 				759FDF5A1C2AC670006BB74A /* PTSerif-Regular.ttf in Resources */,
-				9946708D1C2B52B200C9DCAA /* PT_Sans-Narrow-Web-Bold.ttf in Resources */,
 				759FDF571C2AC670006BB74A /* PTSerif-Bold.ttf in Resources */,
 				994670961C2B52D700C9DCAA /* Vollkorn-Regular.ttf in Resources */,
 			);
