@@ -1,5 +1,4 @@
 var React = require('react-native')
-var _ = require('lodash')
 
 var {
   StyleSheet,
