@@ -25,9 +25,9 @@
 		759FDF591C2AC670006BB74A /* PTSerif-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 759FDF551C2AC670006BB74A /* PTSerif-Italic.ttf */; };
 		759FDF5A1C2AC670006BB74A /* PTSerif-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 759FDF561C2AC670006BB74A /* PTSerif-Regular.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		994670951C2B52D700C9DCAA /* Vollkorn-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 994670931C2B52D700C9DCAA /* Vollkorn-Bold.ttf */; };
-		994670961C2B52D700C9DCAA /* Vollkorn-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 994670941C2B52D700C9DCAA /* Vollkorn-Regular.ttf */; };
 		9990BFB61C2AE7EE00B664BF /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9990BFB51C2AE7EE00B664BF /* ionicons.ttf */; };
+		99DD008E1C2B670800770C3A /* Vollkorn-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 99DD008D1C2B670800770C3A /* Vollkorn-Bold.ttf */; };
+		99DD009A1C2B672400770C3A /* Vollkorn-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 99DD00991C2B672400770C3A /* Vollkorn-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,9 +135,9 @@
 		759FDF561C2AC670006BB74A /* PTSerif-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PTSerif-Regular.ttf"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		994670931C2B52D700C9DCAA /* Vollkorn-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Vollkorn-Bold.ttf"; path = "../../../Desktop/Vollkorn/Vollkorn-Bold.ttf"; sourceTree = "<group>"; };
-		994670941C2B52D700C9DCAA /* Vollkorn-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Vollkorn-Regular.ttf"; path = "../../../Desktop/Vollkorn/Vollkorn-Regular.ttf"; sourceTree = "<group>"; };
 		9990BFB51C2AE7EE00B664BF /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ionicons.ttf; sourceTree = "<group>"; };
+		99DD008D1C2B670800770C3A /* Vollkorn-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vollkorn-Bold.ttf"; sourceTree = "<group>"; };
+		99DD00991C2B672400770C3A /* Vollkorn-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vollkorn-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,8 +276,8 @@
 			children = (
 				9990BFB51C2AE7EE00B664BF /* ionicons.ttf */,
 				759FDF531C2AC670006BB74A /* PTSerif-Bold.ttf */,
-				994670931C2B52D700C9DCAA /* Vollkorn-Bold.ttf */,
-				994670941C2B52D700C9DCAA /* Vollkorn-Regular.ttf */,
+				99DD008D1C2B670800770C3A /* Vollkorn-Bold.ttf */,
+				99DD00991C2B672400770C3A /* Vollkorn-Regular.ttf */,
 				759FDF541C2AC670006BB74A /* PTSerif-BoldItalic.ttf */,
 				759FDF551C2AC670006BB74A /* PTSerif-Italic.ttf */,
 				759FDF561C2AC670006BB74A /* PTSerif-Regular.ttf */,
@@ -542,14 +542,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				994670951C2B52D700C9DCAA /* Vollkorn-Bold.ttf in Resources */,
 				759FDF591C2AC670006BB74A /* PTSerif-Italic.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				759FDF581C2AC670006BB74A /* PTSerif-BoldItalic.ttf in Resources */,
 				9990BFB61C2AE7EE00B664BF /* ionicons.ttf in Resources */,
+				99DD008E1C2B670800770C3A /* Vollkorn-Bold.ttf in Resources */,
 				759FDF5A1C2AC670006BB74A /* PTSerif-Regular.ttf in Resources */,
 				759FDF571C2AC670006BB74A /* PTSerif-Bold.ttf in Resources */,
-				994670961C2B52D700C9DCAA /* Vollkorn-Regular.ttf in Resources */,
+				99DD009A1C2B672400770C3A /* Vollkorn-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
