@@ -68,9 +68,8 @@
       "scale" : "1x"
     },
     {
-      "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "AppIcon40x40x@2x.png",
+      "size" : "40x40",
       "scale" : "2x"
     },
     {
@@ -129,6 +128,7 @@
     {
       "size" : "40x40",
       "idiom" : "watch",
+      "filename" : "AppIcon40x40x@2x.png",
       "scale" : "2x",
       "role" : "appLauncher",
       "subtype" : "38mm"
@@ -146,6 +146,12 @@
       "scale" : "2x",
       "role" : "quickLook",
       "subtype" : "42mm"
+    },
+    {
+      "size" : "512x512",
+      "idiom" : "mac",
+      "filename" : "iTunesArtworkx.png",
+      "scale" : "2x"
     }
   ],
   "info" : {
