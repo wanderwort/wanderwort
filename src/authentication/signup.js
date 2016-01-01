@@ -21,9 +21,10 @@ module.exports = React.createClass({
   },
 
   render: function(){
+    var lowDash = <Text style={styles.lowdash}>_</Text>;
     return (
       <View style={styles.container}>
-        <Text style={styles.logo}>wanderwort_</Text>
+        <Text style={styles.logo}>wanderwort{lowDash}</Text>
         <Text style={styles.label}>Name:</Text>
         <TextInput
           style={styles.input}
@@ -90,4 +91,7 @@ var styles = StyleSheet.create({
     fontFamily: 'PTSerif-Regular',
     marginBottom: 20
   },
+  lowdash:{
+    color: '#DA4120'
+  }
 });
