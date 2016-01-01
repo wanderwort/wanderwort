@@ -11,7 +11,7 @@ var {
   StatusBarIOS
 } = React;
 
-var Main = require('./src/main')
+var Main = require('./src/authentication/signin')
 
 StatusBarIOS.setHidden(true, true)
 
