@@ -4,7 +4,8 @@ var {
   Text,
   View,
   ScrollView,
-  TextInput
+  TextInput,
+  Navigator
 } = React;
 
 var Button = require('../common/button');
@@ -62,7 +63,7 @@ var styles = StyleSheet.create({
     borderWidth: 0,
     borderRadius: 2,
     margin: 5,
-    width: 200,
+    width: 250,
     alignSelf: 'center',
     backgroundColor: '#DA4120',
     color: '#FCFAF2',
@@ -73,7 +74,7 @@ var styles = StyleSheet.create({
     fontFamily: 'PTSerif-Regular'
   },
   logo:{
-    fontSize: 35,
+    fontSize: 51,
     fontFamily: 'PTSerif-Regular',
     marginBottom: 20
   }
