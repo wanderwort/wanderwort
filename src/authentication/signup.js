@@ -48,13 +48,16 @@ module.exports = React.createClass({
           value={this.state.passwordConfirm}
           onChangeText={(text) => this.setState({ passwordConfirm: text})}
           />
-        <Button text={'Sign up'} onPress={this.onSigninPress} />
-        <Button text={'Sign in'} onPress={this.onSigninPress} />
+        <Button text={'Sign up'} onPress={this.onSignupPress} />
+        <Button text={'I have an account'} onPress={this.onSigninPress} />
       </View>
     )
   },
+  onSignupPress: function(){
+    this.props.navigator.immediatelyResetRouteStack([{ name: 'wordstream' }]);
+  },
   onSigninPress: function(){
-    console.log('Bang!');
+    this.props.navigator.pop();
   }
 });
 
