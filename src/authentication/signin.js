@@ -7,7 +7,7 @@ var {
   TextInput
 } = React;
 
-
+var Button = require('../common/button');
 
 module.exports = React.createClass({
   getInitialState: function(){
@@ -15,13 +15,14 @@ module.exports = React.createClass({
       username: '',
       email: '',
       password: '',
-      errorMessage: '',
+      errorMessage: ''
     };
   },
 
   render: function(){
     return (
       <View style={styles.container}>
+        <Text style={styles.logo}>wanderwort_</Text>
         <Text style={styles.label}>Name:</Text>
         <TextInput
           style={styles.input}
@@ -34,12 +35,12 @@ module.exports = React.createClass({
           value={this.state.password}
           onChangeText={(text) => this.setState({ password: text})}
           />
-        
+        <Button text={'Sign in'} onPress={this.onSigninPress} />
       </View>
     )
   },
   onSigninPress: function(){
-    return console.log('Bang!');
+    console.log('Bang!');
   }
 });
 
@@ -59,10 +60,17 @@ var styles = StyleSheet.create({
     margin: 5,
     width: 200,
     alignSelf: 'center',
-    backgroundColor: '#DA4120'
+    backgroundColor: '#DA4120',
+    color: '#FCFAF2',
+    fontFamily: 'PTSerif-Regular'
   },
   label:{
-    fontSize: 18,
+    fontSize: 15,
     fontFamily: 'PTSerif-Regular'
+  },
+  logo:{
+    fontSize: 35,
+    fontFamily: 'PTSerif-Regular',
+    marginBottom: 20
   }
 });
