@@ -34,6 +34,7 @@ module.exports = React.createClass({
           />
         <Text style={styles.label}>Password:</Text>
         <TextInput
+          secureTextEntry={true}
           style={styles.input}
           value={this.state.password}
           onChangeText={(text) => this.setState({ password: text})}
@@ -45,10 +46,12 @@ module.exports = React.createClass({
       </View>
     )
   },
+
+
   onSigninPress: function(){
     Parse.User.logIn(this.state.username, this.state.password, {
       success: (user) => { this.props.navigator.immediatelyResetRouteStack([{ name: 'wordstream' }]); },
-      error: (user, error) => { this.setState({errorMessage: error.message });
+      error: (user, error) => { this.setState({errorMessage: "Please try again or setup account." });
                                 console.log(this.state.username, this.state.password); }
     });
   },

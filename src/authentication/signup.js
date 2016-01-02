@@ -40,12 +40,14 @@ module.exports = React.createClass({
           />
         <Text style={styles.label}>Password:</Text>
         <TextInput
+          secureTextEntry={true}
           style={styles.input}
           value={this.state.password}
           onChangeText={(text) => this.setState({ password: text})}
           />
         <Text style={styles.label}>Confirm Password:</Text>
         <TextInput
+          secureTextEntry={true}
           style={styles.input}
           value={this.state.passwordConfirm}
           onChangeText={(text) => this.setState({ passwordConfirm: text})}
