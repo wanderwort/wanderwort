@@ -5,6 +5,7 @@ var {
   Navigator
 } = React;
 
+var Parse = require('parse/react-native');
 var Signin = require('./authentication/signin');
 var Signup = require('./authentication/signup');
 var Wordstream = require('./core/wordstream');
@@ -16,6 +17,10 @@ var ROUTES = {
 };
 
 module.exports = React.createClass({
+  componentWillMount: function(){
+    Parse.initialize("dLv9QyittaLdBY8uSakQsagqo3Jtd86QwcSzSrQj", "kaMoglnkSigv6JhNrmWHyFcZ6Q8Fgl7418mUieQC");
+  },
+
   renderScene: function(route, navigator){
         var Component = ROUTES[route.name];
         return <Component route={route} navigator={navigator}/>;

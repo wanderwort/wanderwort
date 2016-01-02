@@ -7,6 +7,7 @@ var {
   TextInput
 } = React;
 
+var Parse = require('parse/react-native');
 var Button = require('../common/button');
 
 module.exports = React.createClass({
@@ -34,7 +35,7 @@ module.exports = React.createClass({
         <Text style={styles.label}>Email:</Text>
         <TextInput
           style={styles.input}
-          value={this.state.password}
+          value={this.state.email}
           onChangeText={(text) => this.setState({ email: text})}
           />
         <Text style={styles.label}>Password:</Text>
@@ -49,14 +50,27 @@ module.exports = React.createClass({
           value={this.state.passwordConfirm}
           onChangeText={(text) => this.setState({ passwordConfirm: text})}
           />
+        <Text style={styles.label}>{this.state.errorMessage}</Text>
         <Button text={'Sign up'} onPress={this.onSignupPress} />
         <Button text={'I have an account'} onPress={this.onSigninPress} />
       </View>
     )
   },
-  onSignupPress: function(){
-    this.props.navigator.immediatelyResetRouteStack([{ name: 'wordstream' }]);
-  },
+  onSignupPress: function() {
+    console.log(this.state.username);
+    if (this.state.password !== this.state.passwordConfirm){
+      return this.setState({errorMessage: "Your passwords do not match"});
+    }
+    var user = new Parse.User();
+    user.set('username', this.state.username);
+    user.set('password', this.state.password);
+    user.set('email', this.state.email);
+
+    user.signUp(null, {
+      success: (user) => { this.props.navigator.immediatelyResetRouteStack([{ name: 'wordstream' }]); },
+      error: (user, error) => { this.setState({ errorMessage: error.message})}
+    });
+},
   onSigninPress: function(){
     this.props.navigator.pop();
   }

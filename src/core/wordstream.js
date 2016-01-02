@@ -19,7 +19,7 @@ var words = [{text: 'Sprudel', color: '#0C5FE7', backgroundColor: '#F8F5EF', fon
 
 
 
-var main = React.createClass({
+module.exports = React.createClass({
   getInitialState: function() {
     return {
       scrollEnabled: true
@@ -55,5 +55,3 @@ var styles = StyleSheet.create({
     width: windowSize.width
   }
 });
-
-module.exports = main

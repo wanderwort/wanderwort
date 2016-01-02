@@ -8,6 +8,7 @@ var {
   Navigator
 } = React;
 
+var Parse = require('parse/react-native');
 var Button = require('../common/button');
 
 module.exports = React.createClass({
@@ -37,14 +38,21 @@ module.exports = React.createClass({
           value={this.state.password}
           onChangeText={(text) => this.setState({ password: text})}
           />
+        <Text style={styles.label}>{this.state.errorMessage}</Text>
+
         <Button text={'Sign in'} onPress={this.onSigninPress} />
         <Button text={'I need an account'} onPress={this.onSignupPress} />
       </View>
     )
   },
   onSigninPress: function(){
-    this.props.navigator.immediatelyResetRouteStack([{ name: 'wordstream' }]);
+    Parse.User.logIn(this.state.username, this.state.password, {
+      success: (user) => { this.props.navigator.immediatelyResetRouteStack([{ name: 'wordstream' }]); },
+      error: (user, error) => { this.setState({errorMessage: error.message });
+                                console.log(this.state.username, this.state.password); }
+    });
   },
+
   onSignupPress: function(){
     this.props.navigator.push({name: 'signup'});
   }
