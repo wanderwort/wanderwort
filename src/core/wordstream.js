@@ -9,6 +9,8 @@ var {
 
 var Dimensions = require('Dimensions');
 var windowSize = Dimensions.get('window');
+var Parse = require('parse/react-native');
+var Words = Parse.Object.extend("Words");
 
 var WordContainer = require('../word-container')
 
@@ -24,6 +26,25 @@ module.exports = React.createClass({
     return {
       scrollEnabled: true
     }
+  },
+  componentWillMount: function(){
+    var query = new Parse.Query(Words);
+    query.find({
+      success: function(results){
+        for (var i in results) {
+          var color = results[i].get("color");
+          var text = results[i].get("text");
+          var BackgroundColor = results[i].get("backgroundColor");
+          var fontFamily = results[i].get("fontFamily");
+          var newWord = {text,color,BackgroundColor,fontFamily};
+          words.push(newWord);
+          console.log(words);
+        }
+      },
+      error: function(error){
+        console.log("Query Error:"+console.error.message);
+      }
+    })
   },
   render: function() {
     return (
@@ -41,7 +62,7 @@ module.exports = React.createClass({
     return {
       top: this.page * windowSize.height
     }
-  }
+  },
 });
 
 
