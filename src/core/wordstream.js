@@ -34,11 +34,11 @@ module.exports = React.createClass({
         for (var i in results) {
           var color = results[i].get("color");
           var text = results[i].get("text");
-          var BackgroundColor = results[i].get("backgroundColor");
+          var backgroundColor = results[i].get("backgroundColor");
           var fontFamily = results[i].get("fontFamily");
-          var newWord = {text,color,BackgroundColor,fontFamily};
+          var newWord = {text,color,backgroundColor,fontFamily};
           words.push(newWord);
-          console.log(words);
+          console.log(newWord);
         }
       },
       error: function(error){
