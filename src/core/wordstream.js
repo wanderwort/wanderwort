@@ -14,12 +14,7 @@ var Words = Parse.Object.extend("Words");
 
 var WordContainer = require('../word-container')
 
-var words = [{text: 'Sprudel', color: '#0C5FE7', backgroundColor: '#F8F5EF', fontFamily: 'Vollkorn-Regular'},
-             {text: 'Porree',  color: '#F3F205', backgroundColor: 'red'},
-             {text: 'Eklat', color: '#FCFCFC', backgroundColor: '#000000', fontFamily: 'Vollkorn-Bold'},
-             {text:'Pietät.', color: '#000000', backgroundColor: '#EDE0CE', fontFamily: 'Avenir'}]
-
-
+var words = []
 
 module.exports = React.createClass({
   getInitialState: function() {
@@ -29,7 +24,6 @@ module.exports = React.createClass({
     }
   },
   componentWillMount: function(){
-    console.log("huhu");
     var query = new Parse.Query(Words);
     query.find({
       success: function(results){
@@ -40,7 +34,6 @@ module.exports = React.createClass({
           var fontFamily = results[i].get("fontFamily");
           var newWord = {text,color,backgroundColor,fontFamily};
           words.push(newWord);
-          console.log(newWord);
           this.setState({
             scrollEnabled: true,
             words: words

@@ -30,7 +30,7 @@ module.exports = React.createClass({
     return (
       <Navigator
         style={styles.container}
-        initialRoute={{name: 'wordstream'}}
+        initialRoute={{name: 'signin'}}
         renderScene={this.renderScene}
         configureScene={ () => { return Navigator.SceneConfigs.FloatFromRight }}
         />
