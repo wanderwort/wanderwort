@@ -24,10 +24,12 @@ var words = [{text: 'Sprudel', color: '#0C5FE7', backgroundColor: '#F8F5EF', fon
 module.exports = React.createClass({
   getInitialState: function() {
     return {
-      scrollEnabled: true
+      scrollEnabled: true,
+      words: words
     }
   },
   componentWillMount: function(){
+    console.log("huhu");
     var query = new Parse.Query(Words);
     query.find({
       success: function(results){
@@ -39,8 +41,12 @@ module.exports = React.createClass({
           var newWord = {text,color,backgroundColor,fontFamily};
           words.push(newWord);
           console.log(newWord);
+          this.setState({
+            scrollEnabled: true,
+            words: words
+          });
         }
-      },
+      }.bind(this),
       error: function(error){
         console.log("Query Error:"+console.error.message);
       }
