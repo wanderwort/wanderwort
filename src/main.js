@@ -2,58 +2,44 @@ var React = require('react-native');
 
 var {
   StyleSheet,
-  Text,
-  View,
-  ScrollView,
+  Navigator
 } = React;
 
-var Dimensions = require('Dimensions');
-var windowSize = Dimensions.get('window');
+var Parse = require('parse/react-native');
+var Signin = require('./authentication/signin');
+var Signup = require('./authentication/signup');
+var Wordstream = require('./core/wordstream');
 
-var WordContainer = require('./word-container')
+var ROUTES = {
+  signin: Signin,
+  signup: Signup,
+  wordstream: Wordstream
+};
 
-var words = [{text: 'Sprudel', color: '#0C5FE7', backgroundColor: '#F8F5EF', fontFamily: 'Vollkorn-Regular'},
-             {text: 'Porree',  color: '#F3F205', backgroundColor: 'red'},
-             {text: 'Eklat', color: '#FCFCFC', backgroundColor: '#000000', fontFamily: 'Vollkorn-Bold'},
-             {text:'Pietät.', color: '#000000', backgroundColor: '#EDE0CE', fontFamily: 'Avenir'}]
-
-
-
-var main = React.createClass({
-  getInitialState: function() {
-    return {
-      scrollEnabled: true
-    }
+module.exports = React.createClass({
+  componentWillMount: function(){
+    Parse.initialize("dLv9QyittaLdBY8uSakQsagqo3Jtd86QwcSzSrQj", "kaMoglnkSigv6JhNrmWHyFcZ6Q8Fgl7418mUieQC");
   },
+
+  renderScene: function(route, navigator){
+        var Component = ROUTES[route.name];
+        return <Component route={route} navigator={navigator}/>;
+    },
+
   render: function() {
     return (
-      <ScrollView scrollEnabled={this.state.scrollEnabled} showsVerticalScrollIndicator={false} pagingEnabled={true} style={styles.main} contentContainerStyle={styles.container}>
-        {this.wordContainers()}
-      </ScrollView>
-    );
-  },
-  wordContainers: function() {
-    return words.map((word, index) =>
-      <WordContainer key={index} data={ { word: word } }  parentScrollView={this} />
-    )
-  },
-  subviewStyle: function() {
-    return {
-      top: this.page * windowSize.height
+      <Navigator
+        style={styles.container}
+        initialRoute={{name: 'signin'}}
+        renderScene={this.renderScene}
+        configureScene={ () => { return Navigator.SceneConfigs.FloatFromRight }}
+        />
+      )
     }
-  }
 });
 
-
-var styles = StyleSheet.create({
-  main: {
-    backgroundColor: '#FCFAF2',
-  },
-  wordContainer: {
-    justifyContent: 'center',
-    height: windowSize.height,
-    width: windowSize.width
-  }
+  var styles = StyleSheet.create({
+    container: {
+      flex: 1,
+    }
 });
-
-module.exports = main
