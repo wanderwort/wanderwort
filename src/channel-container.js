@@ -10,11 +10,13 @@ var {
 var Dimensions = require('Dimensions');
 var windowSize = Dimensions.get('window');
 
+var Channel = require('./channel');
+
 var channelContainer = React.createClass({
   render: function() {
     return(
     <View style={styles.container}>
-      <Text>This view contains the channels</Text>
+      <Channel />
     </View>
   )}
 })
