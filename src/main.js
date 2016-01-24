@@ -9,11 +9,13 @@ var Parse = require('parse/react-native');
 var Signin = require('./authentication/signin');
 var Signup = require('./authentication/signup');
 var Wordstream = require('./core/wordstream');
+var Channels = require('./channel-container');
 
 var ROUTES = {
   signin: Signin,
   signup: Signup,
-  wordstream: Wordstream
+  wordstream: Wordstream,
+  channels: Channels
 };
 
 module.exports = React.createClass({
@@ -30,7 +32,7 @@ module.exports = React.createClass({
     return (
       <Navigator
         style={styles.container}
-        initialRoute={{name: 'signin'}}
+        initialRoute={{name: 'channels'}}
         renderScene={this.renderScene}
         configureScene={ () => { return Navigator.SceneConfigs.FloatFromRight }}
         />
