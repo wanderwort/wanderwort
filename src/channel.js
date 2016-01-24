@@ -12,15 +12,16 @@ var Channel = React.createClass({
   render: function() {
     return(
     <View style={styles.container}>
-      <View style={[styles.box, styles.border]}>
+      <View style={styles.box}>
         <View style={styles.header}>
-          <Text>Main Channel</Text>
+          <Text style={styles.headertext}>Main Channel</Text>
         </View>
-        <View>
-          <Text>Description</Text>
-          <Text>First word ever</Text>
-          <Text>Curator</Text>
-          <Text>Relevance?</Text>
+        <View style={styles.ribbon}></View>
+        <View style={styles.body}>
+          <Text style={styles.text}>This is the main channel. The most beautiful words live here.</Text>
+          <Text style={styles.text}>First word ever</Text>
+          <Text style={styles.text}>Curator</Text>
+          <Text style={styles.text}>Relevance?</Text>
           <Button text={'Subscribe'}/>
         </View>
       </View>
@@ -35,17 +36,49 @@ var styles = StyleSheet.create({
     justifyContent: 'center',
     margin: 50
   },
+
   box: {
+  borderWidth: 1,
+  borderRadius: 2,
+  borderColor: '#620B0C',
+  marginTop: 15
   },
+
+  body: {
+  margin: 5
+  },
+
   border: {
     borderColor: 'black',
     borderStyle: 'solid',
     borderWidth: 1
   },
+
   header: {
-    backgroundColor:'red',
+    backgroundColor:'#620B0C',
     alignItems: 'center'
+  },
+
+  text: {
+      alignSelf: 'center',
+      fontSize: 14,
+      fontFamily: 'OpenSans-Light',
+      color:'#620B0C'
+  },
+
+  headertext: {
+    alignSelf: 'center',
+    fontSize: 25,
+    fontFamily: 'PTSerif-Regular',
+    color:'#FCFAF2'
+  },
+
+  ribbon: {
+    marginTop: 8,
+    padding: 5,
+    backgroundColor: '000A1A'
   }
+
 });
 
 

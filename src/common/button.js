@@ -10,7 +10,7 @@ module.exports = React.createClass({
     return (
       <TouchableHighlight
         style = {styles.button}
-        underlayColor = {'#DA4120'}
+        underlayColor = {'#620B0C'}
         onPress = {this.props.onPress}>
         <Text style = {styles.buttonText}>{this.props.text}</Text>
       </TouchableHighlight>
@@ -24,7 +24,7 @@ var styles = StyleSheet.create({
     alignItems: 'center',
     borderWidth: 1,
     borderRadius: 2,
-    borderColor: '#DA4120',
+    borderColor: '#620B0C',
     marginTop: 15,
     padding: 5
   },
@@ -32,7 +32,7 @@ var styles = StyleSheet.create({
     flex: 1,
     alignSelf: 'center',
     fontSize: 18,
-    fontFamily: 'PTSerif-Regular',
-    color:'#DA4120'
+    fontFamily: 'OpenSans-Light',
+    color:'#620B0C'
   }
 });

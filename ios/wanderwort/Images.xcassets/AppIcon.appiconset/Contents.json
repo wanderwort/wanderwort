@@ -16,8 +16,9 @@
       "scale" : "3x"
     },
     {
-      "idiom" : "iphone",
       "size" : "40x40",
+      "idiom" : "iphone",
+      "filename" : "AppIcon40x40x@2x.png",
       "scale" : "2x"
     },
     {
@@ -128,7 +129,6 @@
     {
       "size" : "40x40",
       "idiom" : "watch",
-      "filename" : "AppIcon40x40x@2x.png",
       "scale" : "2x",
       "role" : "appLauncher",
       "subtype" : "38mm"

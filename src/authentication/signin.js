@@ -77,20 +77,21 @@ var styles = StyleSheet.create({
     margin: 5,
     width: 250,
     alignSelf: 'center',
-    backgroundColor: '#DA4120',
+    backgroundColor: '#620B0C',
     color: '#FCFAF2',
-    fontFamily: 'PTSerif-Regular'
+    fontFamily: 'OpenSans-Light'
   },
   label:{
     fontSize: 15,
-    fontFamily: 'PTSerif-Regular'
+    fontFamily: 'OpenSans-Light'
   },
   logo:{
     fontSize: 51,
     fontFamily: 'PTSerif-Regular',
-    marginBottom: 20
+    marginBottom: 20,
+    color: '#000A1A'
   },
   lowdash:{
-    color: '#DA4120'
+    color: '#620B0C'
   }
 });

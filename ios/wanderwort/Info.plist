@@ -37,12 +37,13 @@
 		<string>PTSerif-BoldItalic.ttf</string>
 		<string>ionicons.ttf</string>
 		<string>AbrilFatface-Regular.ttf</string>
-		<string>PT_Sans-Narrow-Web-Bold.ttf</string>
-		<string>PT_Sans-Narrow-Web-Regular.ttf</string>
 		<string>Vollkorn-Bold.ttf</string>
 		<string>Vollkorn-Regular.ttf</string>
 		<string>OldStandard-Bold.ttf</string>
 		<string>OldStandard-Regular.ttf</string>
+		<string>OpenSans-Light.ttf</string>
+		<string>OpenSans-Regular.ttf</string>
+		<string>leaguespartan-bold.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

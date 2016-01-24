@@ -28,6 +28,9 @@
 		9990BFB61C2AE7EE00B664BF /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9990BFB51C2AE7EE00B664BF /* ionicons.ttf */; };
 		99DD008E1C2B670800770C3A /* Vollkorn-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 99DD008D1C2B670800770C3A /* Vollkorn-Bold.ttf */; };
 		99DD009A1C2B672400770C3A /* Vollkorn-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 99DD00991C2B672400770C3A /* Vollkorn-Regular.ttf */; };
+		99E171481C5570E200FB39AB /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 99E171461C5570E200FB39AB /* OpenSans-Light.ttf */; };
+		99E171491C5570E200FB39AB /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 99E171471C5570E200FB39AB /* OpenSans-Regular.ttf */; };
+		99E171551C55732800FB39AB /* leaguespartan-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 99E171541C55732800FB39AB /* leaguespartan-bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +141,9 @@
 		9990BFB51C2AE7EE00B664BF /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ionicons.ttf; sourceTree = "<group>"; };
 		99DD008D1C2B670800770C3A /* Vollkorn-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vollkorn-Bold.ttf"; sourceTree = "<group>"; };
 		99DD00991C2B672400770C3A /* Vollkorn-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vollkorn-Regular.ttf"; sourceTree = "<group>"; };
+		99E171461C5570E200FB39AB /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		99E171471C5570E200FB39AB /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		99E171541C55732800FB39AB /* leaguespartan-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "leaguespartan-bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +283,9 @@
 				9990BFB51C2AE7EE00B664BF /* ionicons.ttf */,
 				759FDF531C2AC670006BB74A /* PTSerif-Bold.ttf */,
 				99DD008D1C2B670800770C3A /* Vollkorn-Bold.ttf */,
+				99E171461C5570E200FB39AB /* OpenSans-Light.ttf */,
+				99E171541C55732800FB39AB /* leaguespartan-bold.ttf */,
+				99E171471C5570E200FB39AB /* OpenSans-Regular.ttf */,
 				99DD00991C2B672400770C3A /* Vollkorn-Regular.ttf */,
 				759FDF541C2AC670006BB74A /* PTSerif-BoldItalic.ttf */,
 				759FDF551C2AC670006BB74A /* PTSerif-Italic.ttf */,
@@ -542,12 +551,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99E171491C5570E200FB39AB /* OpenSans-Regular.ttf in Resources */,
 				759FDF591C2AC670006BB74A /* PTSerif-Italic.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				759FDF581C2AC670006BB74A /* PTSerif-BoldItalic.ttf in Resources */,
 				9990BFB61C2AE7EE00B664BF /* ionicons.ttf in Resources */,
+				99E171551C55732800FB39AB /* leaguespartan-bold.ttf in Resources */,
 				99DD008E1C2B670800770C3A /* Vollkorn-Bold.ttf in Resources */,
 				759FDF5A1C2AC670006BB74A /* PTSerif-Regular.ttf in Resources */,
+				99E171481C5570E200FB39AB /* OpenSans-Light.ttf in Resources */,
 				759FDF571C2AC670006BB74A /* PTSerif-Bold.ttf in Resources */,
 				99DD009A1C2B672400770C3A /* Vollkorn-Regular.ttf in Resources */,
 			);
